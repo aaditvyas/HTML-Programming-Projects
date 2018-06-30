@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Document head -->
+  <head>
+    <!-- Meta Information -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Aadit Vyas">
+    <meta name="description" content="Draft 2 of the Sugar Creek Brewery dashboard to display data derived from IBM cloud.">
+
+    <title>Sugar Creek Brewery Dashboard</title>
+
+    <!-- Website Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="styles/images/Sugar_Creek_Favicon.jpg">
+
+    <!-- Bootstrap and core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+  </head>
+
+  <!-- Document Body -->
+  <body>
+    <div id="first" class="row-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Logo to the left -->
+        <a class="navbar-brand" href="https://sugarcreekbrewing.com/">
+          <img src="styles/images/Sugar_Creek_Logo.png" width="300" height="75" alt="">
+        </a>
+
+        <!-- Toggle button and tabs -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home</a>
+            <a class="nav-item nav-link" href="#">Malt</a>
+            <a class="nav-item nav-link" href="#">Cellar</a>
+            <a class="nav-item nav-link" href="#">Packaging</a>
+            <a class="nav-item nav-link" href="#">Distribution</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+      <!-- Adding a card to display brewing process -->
+    <div id="second" class="row-fluid">
+      <div class="card border-primary mb-5">
+        <img class="card-img-top" src="styles/images/Brewing_Process.png" alt="Diagram of Brewing Process">
+      </div>
+    </div>
+
+      <!-- Add some example graphs -->
+      <div id="third" class="row-fluid">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+
+</html>
