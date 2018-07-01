@@ -5,9 +5,9 @@
   <head>
     <!-- Meta Information -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Aadit Vyas">
-    <meta name="description" content="Draft 2 of the Sugar Creek Brewery dashboard to display data derived from IBM cloud.">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="author" content="Aadit Vyas">
+      <meta name="description" content="Draft 2 of the Sugar Creek Brewery dashboard to display data derived from IBM cloud.">
 
     <title>Sugar Creek Brewery Dashboard</title>
 
@@ -16,14 +16,15 @@
 
     <!-- Bootstrap and core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
   </head>
 
   <!-- Document Body -->
   <body>
+    <!-- Navigation bar -->
     <div id="first" class="row-fluid">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <!-- Logo to the left -->
@@ -48,103 +49,108 @@
       </nav>
     </div>
 
-<!-- PH, temperature, specific gravity... it would be cool to have current values for these on the home.
-1 temperature
-2 pH
-3 specific gravity
-4 time of brewing
-5 amount/ number of yeast cells in a batch
-6 Volume
--->
-
-      <!-- Adding a card to display brewing process -->
+    <!-- Adding a card to display brewing process -->
     <div id="second" class="row-fluid">
       <div class="card border-primary mb-5">
         <img class="card-img-top" src="styles/images/Brewing_Process.png" alt="Diagram of Brewing Process">
       </div>
     </div>
 
-      <!-- Row 1 of graphs -->
-      <div id="third" class="row-fluid">
-        <div class="card-deck">
-          <!-- Temperature -->
-          <div class="card">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
+    <!-- Adding a transition card for graphs -->
+    <div id="second-0.5" class="row-fluid">
+      <div class="card text-center mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Key Points of Analysis</h5>
           </div>
+        </div>
+    </div>
 
-          <!-- pH -->
-          <div class="card">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
+    <!-- Row 1 of graphs -->
+    <div id="third" class="row-fluid">
+      <div class="card-deck">
+        <!-- Temperature -->
+        <div class="card border-primary">
+          <img class="card-img-top" src="styles/images/graphs/temperature_graph.jpg" alt="Card image cap" width="100" height="200">
+          <div class="card-body">
+            <h5 class="card-title">Temperature</h5>
+            <p class="card-text">Current temperature within the factory.</p>
           </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
 
-          <!-- Specific Gravity -->
-          <div class="card">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
+        <!-- pH -->
+        <div class="card border-primary">
+          <img class="card-img-top" src="styles/images/graphs/ph_graph.png" alt="Card image cap" width="100" height="200">
+          <div class="card-body">
+            <h5 class="card-title">pH</h5>
+            <p class="card-text">pH of solution.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 7 mins ago</small>
+          </div>
+        </div>
+
+        <!-- Specific Gravity -->
+        <div class="card border-primary">
+          <img class="card-img-top" src="styles/images/graphs/specific_gravity_graph.png" alt="Card image cap" width="100" height="200">
+          <div class="card-body">
+            <h5 class="card-title">Specific Gravity</h5>
+            <p class="card-text">Specific gravity of solution.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Row 2 of graphs -->
-      <div id="fourth" class="row-fluid">
-        <div class="card-deck">
-          <!-- Temperature -->
-          <div class="card">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
+    <!-- Row 2 of graphs -->
+    <div id="fourth" class="row-fluid mt-4">
+      <div class="card-deck">
+        <!-- Time of Brewing -->
+        <div class="card border-primary">
+          <img class="card-img-top" src="styles/images/graphs/brewing_time_graph.jpg" alt="Card image cap" width="100" height="200">
+          <div class="card-body">
+            <h5 class="card-title">Time of Brewing</h5>
+            <p class="card-text">During of current brewing cycle.</p>
           </div>
-
-          <!-- pH -->
-          <div class="card">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 2 mins ago</small>
           </div>
+        </div>
 
-          <!-- Specific Gravity -->
-          <div class="card">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
+        <!-- Number of Yeast Cells in a Batch -->
+        <div class="card border-primary">
+          <img class="card-img-top" src="styles/images/graphs/yeast_count_graph.png" alt="Card image cap" width="100" height="200">
+          <div class="card-body">
+            <h5 class="card-title">Number of Yeast cells in a Batch</h5>
+            <p class="card-text">Amount of yeast in current batch.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 9 mins ago</small>
+          </div>
+        </div>
+
+        <!-- Volume -->
+        <div class="card border-primary">
+          <img class="card-img-top" src="styles/images/graphs/volume_graph.png" alt="Card image cap" width="100" height="200">
+          <div class="card-body">
+            <h5 class="card-title">Volume</h5>
+            <p class="card-text">Volume of solution in current batch.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 10 mins ago</small>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Website Footer -->
+    <div class="card-footer text-muted mt-3">
+      <h6>Copyright Aadit Vyas. IBM.</h6>
+    </div>
   </body>
 
 </html>
